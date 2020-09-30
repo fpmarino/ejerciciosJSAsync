@@ -7,9 +7,10 @@ function datosPersona(p){
     p.results.forEach(persona => {
 
         console.log("Nombre: " + persona.name.first + " " + persona.name.last);
-        console.log("Sexo: " + persona.gender);
+        console.log("Genero: " + persona.gender);
         console.log("Pais: " + persona.location.country);
         console.log("Estado: " + persona.location.state);
+       // console.log("Ciudad: " + persona.location.city); cuando agrego city me da error
         console.log("Calle: " + persona.location.street.name);
         console.log("Numero: " + persona.location.street.number);
         console.log("CP: " + persona.location.postcode);
